@@ -1,19 +1,18 @@
-
 import { Layout } from '@/components/layout/Layout';
 import { Header } from '@/components/layout/Header';
 import { Plus, Search, Edit, Trash, ArrowDown, ArrowUp } from 'lucide-react';
 import { useState } from 'react';
 
-// Sample user data
+// Sample user data with South Indian names from Andhra Pradesh
 const userData = [
-  { id: 1, username: 'john.doe', fullName: 'John Doe', status: 'Active', group: 'Staff', lastLogin: '2023-05-01 10:23:45' },
-  { id: 2, username: 'alice.smith', fullName: 'Alice Smith', status: 'Active', group: 'Admin', lastLogin: '2023-05-02 08:15:32' },
-  { id: 3, username: 'robert.jones', fullName: 'Robert Jones', status: 'Inactive', group: 'Guest', lastLogin: '2023-04-28 14:45:12' },
-  { id: 4, username: 'sarah.wilson', fullName: 'Sarah Wilson', status: 'Active', group: 'Staff', lastLogin: '2023-05-02 16:30:22' },
-  { id: 5, username: 'michael.brown', fullName: 'Michael Brown', status: 'Locked', group: 'Guest', lastLogin: '2023-04-15 09:10:05' },
-  { id: 6, username: 'emily.davis', fullName: 'Emily Davis', status: 'Active', group: 'Admin', lastLogin: '2023-05-01 17:22:18' },
-  { id: 7, username: 'david.miller', fullName: 'David Miller', status: 'Active', group: 'Staff', lastLogin: '2023-05-02 12:05:33' },
-  { id: 8, username: 'jennifer.wilson', fullName: 'Jennifer Wilson', status: 'Inactive', group: 'Guest', lastLogin: '2023-04-20 11:18:45' }
+  { id: 1, username: 'keshav.reddy', fullName: 'Keshav Reddy', status: 'Active', group: 'Admin', lastLogin: '2023-05-01 10:23:45' },
+  { id: 2, username: 'venkat.naidu', fullName: 'Venkat Naidu', status: 'Active', group: 'Staff', lastLogin: '2023-05-02 08:15:32' },
+  { id: 3, username: 'suresh.babu', fullName: 'Suresh Babu', status: 'Inactive', group: 'Guest', lastLogin: '2023-04-28 14:45:12' },
+  { id: 4, username: 'lakshmi.devi', fullName: 'Lakshmi Devi', status: 'Active', group: 'Staff', lastLogin: '2023-05-02 16:30:22' },
+  { id: 5, username: 'ravi.teja', fullName: 'Ravi Teja', status: 'Locked', group: 'Guest', lastLogin: '2023-04-15 09:10:05' },
+  { id: 6, username: 'ramya.krishna', fullName: 'Ramya Krishna', status: 'Active', group: 'Admin', lastLogin: '2023-05-01 17:22:18' },
+  { id: 7, username: 'prasad.varma', fullName: 'Prasad Varma', status: 'Active', group: 'Staff', lastLogin: '2023-05-02 12:05:33' },
+  { id: 8, username: 'sita.anand', fullName: 'Sita Anand', status: 'Inactive', group: 'Guest', lastLogin: '2023-04-20 11:18:45' }
 ];
 
 const UsersPage = () => {

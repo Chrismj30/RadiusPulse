@@ -9,11 +9,11 @@ import { Link } from 'react-router-dom';
 
 const ActivityFeed = () => {
   const activities = [
-    { user: 'john.doe', action: 'Authentication successful', time: '2 minutes ago', status: 'successful' },
-    { user: 'alice.smith', action: 'Authentication successful', time: '5 minutes ago', status: 'successful' },
+    { user: 'keshav.reddy', action: 'Authentication successful', time: '2 minutes ago', status: 'successful' },
+    { user: 'venkat.naidu', action: 'Authentication successful', time: '5 minutes ago', status: 'successful' },
     { user: 'unknown', action: 'Authentication failed', time: '7 minutes ago', status: 'failed' },
-    { user: 'robert.jones', action: 'Authentication successful', time: '12 minutes ago', status: 'successful' },
-    { user: 'sarah.wilson', action: 'Authentication successful', time: '15 minutes ago', status: 'successful' }
+    { user: 'ramya.krishna', action: 'Authentication successful', time: '12 minutes ago', status: 'successful' },
+    { user: 'lakshmi.devi', action: 'Authentication successful', time: '15 minutes ago', status: 'successful' }
   ];
 
   return (
